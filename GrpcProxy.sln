@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcProxy", "GrpcProxy\GrpcProxy.csproj", "{A88C7D9C-707D-4FE6-A5ED-0FF5C29BAF44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocGenerator", "ProtocGenerator\ProtocGenerator.csproj", "{10F93D7F-491A-401A-ABCC-E5F94D91F373}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassGenerator", "ClassGenerator\ClassGenerator.csproj", "{10F93D7F-491A-401A-ABCC-E5F94D91F373}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

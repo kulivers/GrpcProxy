@@ -2,6 +2,11 @@ using System.Reflection;
 using GrpcProxy;
 using GrpcProxy.Extensions;
 using Microsoft.Extensions.FileProviders;
+using ClassGenerator;
+
+var classGen = new GrpcClassGenerator();
+var protosDir = Path.Combine(Directory.GetCurrentDirectory(), "Protos");
+await classGen.GenerateClasses(protosDir);
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -47,5 +52,3 @@ app.UseEndpoints(endpointsBuilder =>
 app.MapControllers();
 app.Run();
 
-// C:\Users\ekul\.nuget\packages\grpc.tools\2.40.0\tools\windows_x64\protoc.exe --csharp_out=obj\Debug\net6.0\Protos --plugin=protoc-gen-grpc=C:\Users\ekul\.nuget\packages\grpc.tools\2.40.0\tools\windows_x64\grpc_csharp_plugin.exe --grpc_out=obj\Debug\net6.0\Protos --grpc_opt=no_client --proto_path=C:\Users\ekul\.nuget\packages\grpc.tools\2.40.0\build\native\include --proto_path=. --dependency_out=obj\Debug\net6.0\12fbc7ffe642ca7e_counter.protodep --error_format=msvs Protos\counter.proto
-// C:\Users\ekul\.nuget\packages\grpc.tools\2.40.0\tools\windows_x64\protoc.exe --csharp_out=obj\Debug\net6.0\Protos --plugin=protoc-gen-grpc=C:\Users\ekul\.nuget\packages\grpc.tools\2.40.0\tools\windows_x64\grpc_csharp_plugin.exe --grpc_out=obj\Debug\net6.0\Protos --grpc_opt=no_client --proto_path=C:\Users\ekul\.nuget\packages\grpc.tools\2.40.0\build\native\include --proto_path=. --dependency_out=obj\Debug\net6.0\12fbc7ffe642ca7e_greet.protodep --error_format=msvs Protos\greet.proto

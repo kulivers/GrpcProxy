@@ -11,12 +11,24 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <Protobuf Include="Protos\counter.proto" GrpcServices="Server" />
-        <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+       
         <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
         <PackageReference Include="Grpc.AspNetCore.Server" Version="2.47.0" />
         <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.47.0" />
         <PackageReference Include="Grpc.AspNetCore.Web" Version="2.47.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ClassGenerator\ClassGenerator.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Services\grpc\GrpcCounterService.cs" />
+      <Compile Remove="Services\grpc\GrpcGreeterService.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Services\grpc" />
     </ItemGroup>
 
 </Project>
