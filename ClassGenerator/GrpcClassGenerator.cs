@@ -4,7 +4,7 @@ namespace ClassGenerator;
 
 public class GrpcClassGenerator
 {
-    public async Task GenerateClasses(string protosDirectory)
+    public async Task GenerateGrpcClasses(string protosDirectory)
     {
         var helper = new GrpcToolsHelper();
         await helper.InitToolsAsync();
@@ -30,7 +30,7 @@ public class GrpcClassGenerator
         }
     }
 
-    public async Task GenerateClasses(string protosDirectory, string outputDir)
+    public async Task GenerateGrpcClasses(string protosDirectory, string outputDir)
     {
         var helper = new GrpcToolsHelper();
         await helper.InitToolsAsync();

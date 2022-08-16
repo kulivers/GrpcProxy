@@ -6,7 +6,7 @@ using ClassGenerator;
 
 var classGen = new GrpcClassGenerator();
 var protosDir = Path.Combine(Directory.GetCurrentDirectory(), "Protos");
-await classGen.GenerateClasses(protosDir);
+await classGen.GenerateGrpcClasses(protosDir);
 
 
 var builder = WebApplication.CreateBuilder(args);

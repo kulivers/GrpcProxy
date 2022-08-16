@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcProxy", "GrpcProxy\Grpc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassGenerator", "ClassGenerator\ClassGenerator.csproj", "{10F93D7F-491A-401A-ABCC-E5F94D91F373}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDescriptions", "ApiDescriptions\ApiDescriptions.csproj", "{A588606C-9860-4FC1-AE2E-BC292576CC3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDesctiption.Tests", "ApiDesctiption.Tests\ApiDesctiption.Tests.csproj", "{4E6AADFB-E64D-4695-8ABD-A264E98B8DFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{10F93D7F-491A-401A-ABCC-E5F94D91F373}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10F93D7F-491A-401A-ABCC-E5F94D91F373}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10F93D7F-491A-401A-ABCC-E5F94D91F373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A588606C-9860-4FC1-AE2E-BC292576CC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A588606C-9860-4FC1-AE2E-BC292576CC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A588606C-9860-4FC1-AE2E-BC292576CC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A588606C-9860-4FC1-AE2E-BC292576CC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E6AADFB-E64D-4695-8ABD-A264E98B8DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6AADFB-E64D-4695-8ABD-A264E98B8DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6AADFB-E64D-4695-8ABD-A264E98B8DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6AADFB-E64D-4695-8ABD-A264E98B8DFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
